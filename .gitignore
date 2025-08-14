@@ -1,0 +1,68 @@
+# AKUMA CrossC2 Arsenal - .gitignore
+
+# Sensitive Files - NEVER COMMIT THESE!
+*.beacon_keys
+.cobaltstrike.beacon_keys
+*.store
+.gen.jar
+cobaltstrike-client.jar
+
+# Generated Beacons (potential malware)
+beacon_*
+stealth_beacon_*
+evil_beacon*
+generated_beacons/
+*.elf
+*.exe
+*.app
+*.dmg
+
+# Logs and Runtime
+*.log
+logs/
+downloads/
+data/
+temp/
+tmp/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.o
+*.so
+*.dylib
+*.dll
+*.class
+
+# Archives
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# OS specific
+.Trash/
+$RECYCLE.BIN/
+ehthumbs.db
+
+# Custom profiles with real C2 infrastructure
+*real_c2*
+*production*
+*live*
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Sensitive configs
+config_real.ini
+production.profile
+live_*.profile
